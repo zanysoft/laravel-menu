@@ -8,9 +8,10 @@ class Menus extends Model
 {
     protected $table = 'menus';
 
-    public function __construct( array $attributes = [] ){
-    	//parent::construct( $attributes );
-    	$this->table = config('menu.table_prefix') . config('menu.table_name_menus');
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->table = config('menu.table_prefix') . config('menu.table_name_menus');
     }
 
     public static function byName($name)
