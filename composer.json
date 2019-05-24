@@ -1,0 +1,39 @@
+{
+	"name":"zanysoft/laravel-menu",
+	"description":"drag and drop menu generator like wordpress for laravel 5",
+	"keywords":[
+		"Laravel",
+		"Menu",
+		"Wordpress",
+		"Builder"
+	],
+	"authors":[
+		{
+			"name":"Mubashar Ahmad",
+			"email":"info@zanysoft.co"
+		}
+	],
+	"homepage":"https://github.com/zanysoft/laravel-menu",
+	"require":{
+		"php":">=5.5.9",
+		"illuminate/support":">=5.1"
+	},
+	"require-dev":{
+		"phpunit/phpunit":"~4.0"
+	},
+	"autoload":{
+		"psr-4":{
+			"ZanySoft\\Menu\\":"src/"
+		}
+	},
+	"extra":{
+		"laravel":{
+			"providers":[
+				"ZanySoft\\Menu\\MenuServiceProvider"
+			],
+			"aliases":{
+				"Menu":"ZanySoft\\Menu\\Facades\\Menu"
+			}
+		}
+	}
+}
